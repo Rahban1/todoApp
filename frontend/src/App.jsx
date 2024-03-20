@@ -38,7 +38,7 @@ function App() {
   return (
     <div className='flex justify-center items-center flex-col gap-2 bg-gray-100 h-screen'>
       <CreateTodo/>
-      <Todos todos={todo} onTodoCompleteTodoComplete={handleTodoComplete}/>
+      <Todos todos={todo} onTodoComplete={handleTodoComplete}/>
     </div>
   )
 }
