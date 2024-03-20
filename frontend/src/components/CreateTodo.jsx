@@ -39,7 +39,7 @@ function CreateTodo() {
             setDescription(value2);
         }}/> <br />
 
-        <button className='border-2 border-slate-400 rounded mb-3 p-2 hover:shadow-md hover:border-black hover:border-2' onClick={handleAddTodo}>Add a Todo</button>
+        <button className='border-2 border-slate-400 rounded mb-3 p-2 hover:shadow-md hover:border-black hover:border-2' onClick={handleAddTodo} onTouchEnd={handleAddTodo}>Add a Todo</button>
     </div>
   )
 }

@@ -41,7 +41,7 @@ function Todos({todos, onTodoComplete}) {
                       <h1 className='font-semibold ml-1'>{x.title}</h1>
                       <h2 className='font-normal ml-1'>{x.description}</h2>
                     </div>
-                    <button onClick={()=>{handleCompleteClick(x._id)}} className={x.completed === true ? 'border-2 bg-green-500 rounded-full p-1 mr-1' : 'border-2 border-green-300 hover:border-green-500 rounded-full p-1'} >{x.completed === true ? 'completed' : 'Mark as complete'}</button>
+                    <button onClick={()=>{handleCompleteClick(x._id)}} onTouchEnd={()=>{handleCompleteClick(x._id)}} className={x.completed === true ? 'border-2 bg-green-500 rounded-full p-1 mr-1' : 'border-2 border-green-300 hover:border-green-500 rounded-full p-1'} >{x.completed === true ? 'completed' : 'Mark as complete'}</button>
                 </div>
             )
         })}
